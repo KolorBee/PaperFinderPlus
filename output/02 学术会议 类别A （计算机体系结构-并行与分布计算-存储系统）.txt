@@ -1,0 +1,26 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [PPOPP 2024] POSTER: OCToPus: Semantic-aware Concurrency Control for Blockchain Transactions. DOI: https://doi.org/10.1145/3627535.3638494
+2. [PPOPP 2023] Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing. DOI: https://doi.org/10.1145/3572848.3577524
+
+==================================================
+
+## 详细信息
+
+
+## PPOPP (ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming ACM) 2024年
+- 来源: http://dblp.uni-trier.de/db/conf/ppopp/
+- Contents链接: https://dblp.uni-trier.de/db/conf/ppopp/ppopp2024.html
+- 找到的论文:
+
+  * POSTER: OCToPus: Semantic-aware Concurrency Control for Blockchain Transactions. [DOI: https://doi.org/10.1145/3627535.3638494]
+
+## PPOPP (ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming ACM) 2023年
+- 来源: http://dblp.uni-trier.de/db/conf/ppopp/
+- Contents链接: https://dblp.uni-trier.de/db/conf/ppopp/ppopp2023.html
+- 找到的论文:
+
+  * Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing. [DOI: https://doi.org/10.1145/3572848.3577524]

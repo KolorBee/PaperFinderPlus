@@ -1,0 +1,18 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [TOCS 2023] Charlotte: Reformulating Blockchains into a Web of Composable Attested Data Structures for Cross-Domain Applications. DOI: https://doi.org/10.1145/3607534
+
+==================================================
+
+## 详细信息
+
+
+## TOCS (ACM Transactions on Computer Systems ACM) 2023年
+- 来源: http://dblp.uni-trier.de/db/journals/tocs/
+- 卷期: https://dblp.uni-trier.de/db/journals/tocs/tocs41.html
+- 找到的论文:
+
+  * Charlotte: Reformulating Blockchains into a Web of Composable Attested Data Structures for Cross-Domain Applications. [DOI: https://doi.org/10.1145/3607534]
