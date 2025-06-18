@@ -273,6 +273,8 @@ def parse_arguments():
                         help='期刊类输出文件名格式，使用{topic}作为专题名称占位符')
     parser.add_argument('--conference-format', dest='conference_format',
                         help='会议类输出文件名格式，使用{topic}作为专题名称占位符')
+    parser.add_argument('--output-format', dest='output_format', choices=['txt', 'xlsx'],
+                        help='输出文件格式，可选txt或xlsx，默认为txt')
     
     return parser.parse_args()
 
@@ -299,6 +301,11 @@ def main():
     
     # 设置输出文件名格式
     set_output_formats(args.journal_format, args.conference_format)
+    
+    # 设置输出文件格式（txt或xlsx）
+    if args.output_format:
+        from utils.file_handler import set_output_format
+        set_output_format(args.output_format)
     
     # 检查模板文件是否存在
     # 先尝试在input_dir中找文件

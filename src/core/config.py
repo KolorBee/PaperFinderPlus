@@ -26,6 +26,10 @@ INPUT_FILE = "新建文本文档.txt"  # 输入文件名
 # 输出配置
 OUTPUT_DIR = os.path.join(ROOT_DIR, "output")  # 结果输出目录，设置为根目录下的output
 
+# 输出格式，支持"txt"或"xlsx"或两者都支持"txt, xlsx"
+# 多种格式之间用逗号分隔，例如："txt, xlsx"
+OUTPUT_FORMAT = "txt, xlsx"  # 默认为txt文本格式
+
 # 输出文件名格式
 JOURNAL_OUTPUT_FORMAT = "学术期刊 类别A （{topic}）.txt"  # 期刊类输出文件格式
 CONFERENCE_OUTPUT_FORMAT = "学术会议 类别A （{topic}）.txt"  # 会议类输出文件格式 

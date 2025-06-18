@@ -88,31 +88,51 @@ def extract_doi(parent):
     """
     if not parent:
         return None
-        
-    # 查找所有可能的DOI链接
+    
+    # 首先优先查找class="drop-down"块中的head块内的链接（会议论文链接）
+    dropdown = parent.select_one('.drop-down')
+    if dropdown:
+        head_div = dropdown.select_one('.head')
+        if head_div:
+            link = head_div.find('a')
+            if link and link.get('href'):
+                return link.get('href')
+    
+    # 如果没找到，再查找其他可能的DOI链接
     for link in parent.find_all('a'):
         href = link.get('href', '')
+        # 先检查标准DOI链接
         if 'doi.org' in href:
             # 直接返回完整的DOI链接
+            return href
+            
+        # 保存可能的会议链接（以https开头）
+        if href.startswith('https://') and ('conference' in href or 'conf' in href or 'proceedings' in href or 'paper' in href or 'presentation' in href):
             return href
             
         # 有时DOI可能在链接的标题或属性中
         title = link.get('title', '')
         if 'doi.org' in title or 'DOI' in title:
             if 'doi.org' in title:
-                match = re.search(r'(https?://doi\.org/\S+)', title)
+                match = re.search(r'(https?://doi\.org/\S+)(?:\s|"|\'|$)', title)
                 if match:
                     return match.group(1)
             # 对于其他形式的DOI链接，检查href
             if href and ('doi' in href or 'DOI' in href):
                 return href
     
-    # 处理直接嵌在文本中的DOI
+    # 处理直接嵌在文本中的DOI - 修改为不截断DOI链接尾部
     text = parent.get_text()
-    doi_pattern = re.compile(r'(https?://doi\.org/\S+)[\s\)]')
+    doi_pattern = re.compile(r'(https?://doi\.org/\S+?)(?:\s|\)|$)')
     match = doi_pattern.search(text)
     if match:
         return match.group(1)
+    
+    # 最后尝试获取任何有效的https链接
+    for link in parent.find_all('a'):
+        href = link.get('href', '')
+        if href.startswith('https://'):
+            return href
     
     return None
 
