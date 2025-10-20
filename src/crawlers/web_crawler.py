@@ -160,7 +160,8 @@ def find_blockchain_papers(url):
         
         for element in title_elements:
             title = element.get_text().strip()
-            if re.search(r'blockchain', title, re.IGNORECASE):
+            # 关键词替换
+            if re.search(r'Graph', title, re.IGNORECASE):
                 print(f"找到区块链相关标题: {title}")
                 if len(title) > 10 and len(title) < 300:  # 过滤过短或过长的标题
                     cleaned_title = re.sub(r'\s+', ' ', title).strip()
@@ -189,7 +190,8 @@ def find_blockchain_papers(url):
             entries = soup.select('li.entry, .data, .publ-list > *')
             for entry in entries:
                 entry_text = entry.get_text().lower()
-                if 'blockchain' in entry_text:
+                # 关键词替换
+                if 'Graph' in entry_text:
                     # 从条目中提取标题
                     title_element = entry.select_one('.title') or entry
                     title = title_element.get_text().strip()

@@ -1,0 +1,32 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [TSC 2025] Prediction of Heterogeneous Device Task Runtime Based on Edge Server-Oriented Deep Neuro-Fuzzy System. DOI: https://doi.org/10.1109/TSC.2024.3520869
+2. [TSC 2024] Attribute-Hiding Fuzzy Encryption for Privacy-Preserving Data Evaluation. DOI: https://doi.org/10.1109/TSC.2024.3376198
+3. [TSC 2024] Creation of 6G Communication System for VANETs via a Neuro-Fuzzy Forwarder Selection Scheme. DOI: https://doi.org/10.1109/TSC.2023.3331730
+4. [TSC 2024] Fuzzy Deduplication: Color-Aware Deduplication for Multi-Media Data. DOI: https://doi.org/10.1109/TSC.2024.3418351
+5. [TSC 2024] DNF-BLPP: An Effective Deep Neuro-Fuzzy Based Bilateral Location Privacy-Preserving Scheme for Service in Spatiotemporal Crowdsourcing. DOI: https://doi.org/10.1109/TSC.2024.3451236
+
+==================================================
+
+## 详细信息
+
+
+## TSC (IEEE Transactions on Services Computing IEEE) 2025年
+- 来源: http://dblp.uni-trier.de/db/journals/tsc/
+- 卷期: https://dblp.uni-trier.de/db/journals/tsc/tsc18.html
+- 找到的论文:
+
+  * Prediction of Heterogeneous Device Task Runtime Based on Edge Server-Oriented Deep Neuro-Fuzzy System. [DOI: https://doi.org/10.1109/TSC.2024.3520869]
+
+## TSC (IEEE Transactions on Services Computing IEEE) 2024年
+- 来源: http://dblp.uni-trier.de/db/journals/tsc/
+- 卷期: https://dblp.uni-trier.de/db/journals/tsc/tsc17.html
+- 找到的论文:
+
+  * Attribute-Hiding Fuzzy Encryption for Privacy-Preserving Data Evaluation. [DOI: https://doi.org/10.1109/TSC.2024.3376198]
+  * Creation of 6G Communication System for VANETs via a Neuro-Fuzzy Forwarder Selection Scheme. [DOI: https://doi.org/10.1109/TSC.2023.3331730]
+  * Fuzzy Deduplication: Color-Aware Deduplication for Multi-Media Data. [DOI: https://doi.org/10.1109/TSC.2024.3418351]
+  * DNF-BLPP: An Effective Deep Neuro-Fuzzy Based Bilateral Location Privacy-Preserving Scheme for Service in Spatiotemporal Crowdsourcing. [DOI: https://doi.org/10.1109/TSC.2024.3451236]

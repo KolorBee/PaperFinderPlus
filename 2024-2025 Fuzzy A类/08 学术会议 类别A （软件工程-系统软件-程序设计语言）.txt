@@ -1,0 +1,18 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [KBSE 2024] Using Static Analysis to Aid Monolith to Microservice System Transformation: Tuning Fuzzy c-Means in a VAE-Based GNN Approach. DOI: https://doi.org/10.1145/3691621.3694933
+
+==================================================
+
+## 详细信息
+
+
+## KBSE (International Conference on Automated Software Engineering IEEE/ACM) 2024年
+- 来源: http://dblp.uni-trier.de/db/conf/kbse/
+- Contents链接: https://dblp.uni-trier.de/db/conf/kbse/ase2024w.html
+- 找到的论文:
+
+  * Using Static Analysis to Aid Monolith to Microservice System Transformation: Tuning Fuzzy c-Means in a VAE-Based GNN Approach. [DOI: https://doi.org/10.1145/3691621.3694933]

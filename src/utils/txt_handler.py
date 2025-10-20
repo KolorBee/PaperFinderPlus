@@ -76,7 +76,7 @@ def save_topic_results(results, all_papers, topic_name, output_file, is_journal=
     """保存结果到文本文件"""
     try:
         with open(output_file, 'w', encoding='utf-8') as file:
-            file.write("# 包含 'blockchain' 关键词的论文\n")
+            file.write("# 包含关键词的论文\n")
             file.write("="*50 + "\n\n")
             
             # 先添加所有论文的总结
@@ -145,7 +145,7 @@ def save_venue_result(venue_name, venue_full_name, year, papers, source_link,
         # 如果文件不存在，创建新文件并写入头部
         if not os.path.exists(output_file):
             with open(output_file, 'w', encoding='utf-8') as file:
-                file.write("# 包含 'blockchain' 关键词的论文\n")
+                file.write("# 包含关键词的论文\n")
                 file.write("="*50 + "\n\n")
                 file.write("## 详细信息\n\n")
                 file.write(result_entry)

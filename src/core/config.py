@@ -14,10 +14,10 @@ PROXIES = None
 TIMEOUT = 30
 
 # 目标年份
-TARGET_YEARS = ["2023", "2024", "2025"]
+TARGET_YEARS = ["2024", "2025"]
 
-# 关键词
-TARGET_KEYWORDS = ["blockchain"]
+# 关键词替换
+TARGET_KEYWORDS = ["Graph"] 
 
 # 输入配置
 INPUT_DIR = os.path.join(ROOT_DIR, "input")  # 输入目录，设置为根目录下的input

@@ -1,0 +1,222 @@
+# 包含关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [SIGIR 2025] MSCRS: Multi-modal Semantic Graph Prompt Learning Framework for Conversational Recommender Systems. DOI: https://doi.org/10.1145/3726302.3730040
+2. [SIGIR 2025] Rethinking Continual Knowledge Graph Embedding: Benchmarks and Analysis. DOI: https://doi.org/10.1145/3726302.3730073
+3. [SIGIR 2025] Towards Accurate Social User Geolocation: Mean Shift, Incremental Learning and Graph Convolutional Networks. DOI: https://doi.org/10.1145/3726302.3730095
+4. [SIGIR 2025] Enhancing the Patent Matching Capability of Large Language Models via the Memory Graph. DOI: https://doi.org/10.1145/3726302.3729970
+5. [SIGIR 2025] BotBR: Social Bot Detection with Balanced Feature Fusion and Reliability-Enhanced Graph Learning. DOI: https://doi.org/10.1145/3726302.3729908
+6. [SIGIR 2025] CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs. DOI: https://doi.org/10.1145/3726302.3729920
+7. [SIGIR 2025] Heterogeneous Graph Embedding Made More Practical. DOI: https://doi.org/10.1145/3726302.3729993
+8. [SIGIR 2025] Leveraging Large Language Models for Effective Label-free Node Classification in Text-Attributed Graphs. DOI: https://doi.org/10.1145/3726302.3730021
+9. [SIGIR 2025] Enhancing Homophily in Heterogeneous Graph Contrastive Learning via Connection Strength and Multi-view Self-Expression. DOI: https://doi.org/10.1145/3726302.3729968
+10. [SIGIR 2025] InfoNCE is a Free Lunch for Semantically guided Graph Contrastive Learning. DOI: https://doi.org/10.1145/3726302.3730007
+11. [SIGIR 2025] MINTT: Memory Inductive Transfer for Temporal Graph Neural Networks. DOI: https://doi.org/10.1145/3726302.3730035
+12. [SIGIR 2025] Question-Answer Extraction from Scientific Articles Using Knowledge Graphs and Large Language Models. DOI: https://doi.org/10.1145/3726302.3730068
+13. [SIGIR 2025] BALI: Enhancing Biomedical Language Representations through Knowledge Graph and Language Model Alignment. DOI: https://doi.org/10.1145/3726302.3729901
+14. [SIGIR 2025] Flow-guided Direct Preference Optimization for Knowledge Graph Reasoning with Trees. DOI: https://doi.org/10.1145/3726302.3729980
+15. [SIGIR 2025] Segmentation Similarity Enhanced Semantic Related Entity Fusion for Multi-modal Knowledge Graph Completion. DOI: https://doi.org/10.1145/3726302.3730082
+16. [SIGIR 2025] From Knowledge Forgetting to Accumulation: Evolutionary Relation Path Passing for Lifelong Knowledge Graph Embedding. DOI: https://doi.org/10.1145/3726302.3729982
+17. [SIGIR 2025] AdaRPT: An Adaptive Rule Pattern Transfer Model for Fully Inductive Knowledge Graph Reasoning. DOI: https://doi.org/10.1145/3726302.3729889
+18. [SIGIR 2025] HyperG: Hypergraph-Enhanced LLMs for Structured Knowledge. DOI: https://doi.org/10.1145/3726302.3730002
+19. [SIGIR 2025] Comprehending Knowledge Graphs with Large Language Models for Recommender Systems. DOI: https://doi.org/10.1145/3726302.3729932
+20. [SIGIR 2025] InstructRAG: Leveraging Retrieval-Augmented Generation on Instruction Graphs for LLM-Based Task Planning. DOI: https://doi.org/10.1145/3726302.3730009
+21. [SIGIR 2025] Retrieval Augmented Generation for Dynamic Graph Modeling. DOI: https://doi.org/10.1145/3726302.3729958
+22. [SIGIR 2025] Disentangled Graph Debiasing for Next POI Recommendation. DOI: https://doi.org/10.1145/3726302.3729952
+23. [SIGIR 2025] COHESION: Composite Graph Convolutional Network with Dual-Stage Fusion for Multimodal Recommendation. DOI: https://doi.org/10.1145/3726302.3729927
+24. [SIGIR 2025] Adaptive Graph Integration for Cross-Domain Recommendation via Heterogeneous Graph Coordinators. DOI: https://doi.org/10.1145/3726302.3729886
+25. [SIGIR 2025] Graph Spectral Filtering with Chebyshev Interpolation for Recommendation. DOI: https://doi.org/10.1145/3726302.3729991
+26. [SIGIR 2025] Hypercomplex Knowledge Graph-Aware Recommendation. DOI: https://doi.org/10.1145/3726302.3730001
+27. [SIGIR 2025] Balancing Self-Presentation and Self-Hiding for Exposure-Aware Recommendation Based on Graph Contrastive Learning. DOI: https://doi.org/10.1145/3726302.3729900
+28. [SIGIR 2025] Invariance Matters: Empowering Social Recommendation via Graph Invariant Learning. DOI: https://doi.org/10.1145/3726302.3730013
+29. [SIGIR 2025] CORONA: A Coarse-to-Fine Framework for Graph-based Recommendation with Large Language Models. DOI: https://doi.org/10.1145/3726302.3729937
+30. [SIGIR 2025] Bridging Short Videos and Streamers with Multi-Graph Contrastive Learning for Live Streaming Recommendation. DOI: https://doi.org/10.1145/3726302.3729914
+31. [SIGIR 2025] Rating-Aware Homogeneous Review Graphs and User Likes/Dislikes Differentiation for Effective Recommendations. DOI: https://doi.org/10.1145/3726302.3730069
+32. [SIGIR 2025] Locality-Sensitive Indexing for Graph-Based Approximate Nearest Neighbor Search. DOI: https://doi.org/10.1145/3726302.3730028
+33. [SIGIR 2025] UPPR+: Scaling Uncertain Personalised PageRank Computation on Billion-Sized Graphs with Mutually Exclusive Edges. DOI: https://doi.org/10.1145/3726302.3730113
+34. [SIGIR 2025] Highly Efficient Disk-based Nearest Neighbor Search on Extended Neighborhood Graph. DOI: https://doi.org/10.1145/3726302.3729996
+35. [SIGIR 2025] IGP: Efficient Multi-Vector Retrieval via Proximity Graph Index. DOI: https://doi.org/10.1145/3726302.3730004
+36. [SIGIR 2025] HTGformer: Heterogeneous Temporal Graph Transformer. DOI: https://doi.org/10.1145/3726302.3730209
+37. [SIGIR 2025] Improving Link Sign Prediction in Signed Bipartite Graphs via Balanced Line Graphs. DOI: https://doi.org/10.1145/3726302.3730210
+38. [SIGIR 2025] UTCS: Effective Unsupervised Temporal Community Search with Pre-training of Temporal Dynamics and Subgraph Knowledge. DOI: https://doi.org/10.1145/3726302.3730263
+39. [SIGIR 2025] Graph-Based Multimodal Contrastive Learning for Chart Question Answering. DOI: https://doi.org/10.1145/3726302.3730204
+40. [SIGIR 2025] Graph-Augmented Retrieval with Memory-Driven Reasoning and Constraint-Aware Filtering for MultiHop QA. DOI: https://doi.org/10.1145/3726302.3730203
+41. [SIGIR 2025] Squeeze and Excitation: A Weighted Graph Contrastive Learning for Collaborative Filtering. DOI: https://doi.org/10.1145/3726302.3730251
+42. [SIGIR 2025] ReCDAP: Relation-based Conditional Diffusion with Attention Pooling for Few-Shot Knowledge Graph Completion. DOI: https://doi.org/10.1145/3726302.3730241
+43. [SIGIR 2025] More Than Just A Conversation: A Multi-agent Reasoning Graph Knowledge Distillation for Conversational Stance Detection. DOI: https://doi.org/10.1145/3726302.3730232
+44. [SIGIR 2025] KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking. DOI: https://doi.org/10.1145/3726302.3730217
+45. [SIGIR 2025] The Effects of Demographic Instructions on LLM Personas. DOI: https://doi.org/10.1145/3726302.3730255
+46. [SIGIR 2025] RSGEA: Relationship Structure Line Graph for Semi-supervised Entity Alignment based on Edge Weight Adjustment. DOI: https://doi.org/10.1145/3726302.3730247
+47. [SIGIR 2025] Towards Enhanced Agricultural Information Access in Kiswahili: Integrating Knowledge Graphs and Retrieval-Augmented Generation. DOI: https://doi.org/10.1145/3726302.3730271
+48. [SIGIR 2025] A Reproducibility Study of Graph-Based Legal Case Retrieval. DOI: https://doi.org/10.1145/3726302.3730282
+49. [SIGIR 2025] Benchmarking Recommendation, Classification, and Tracing Based on Hugging Face Knowledge Graph. DOI: https://doi.org/10.1145/3726302.3730277
+50. [SIGIR 2025] SAGraph: A Large-Scale Social Graph Dataset with Comprehensive Context for Influencer Selection in Marketing. DOI: https://doi.org/10.1145/3726302.3730334
+51. [SIGIR 2025] Fact Verification in Knowledge Graphs Using LLMs. DOI: https://doi.org/10.1145/3726302.3730142
+52. [SIGIR 2025] ROKSANA: An Open-Source Toolkit for Robust Graph-Based Keyword Search. DOI: https://doi.org/10.1145/3726302.3730154
+53. [SIGIR 2025] Conversational Bibliographic Search. DOI: https://doi.org/10.1145/3726302.3730144
+54. [SIGIR 2025] Graph Isomorphism Network-Based Cohort Modeling In Click-Through Rate Prediction. DOI: https://doi.org/10.1145/3726302.3731936
+55. [SIGIR 2025] Inquiry Assistant Using LLM-Generated Knowledge Graphs. DOI: https://doi.org/10.1145/3726302.3731956
+56. [SIGIR 2025] Ontology-Guided Knowledge Graph Retrieval for Multi-Hop and Cross-Granularity Store Fulfillment Queries. DOI: https://doi.org/10.1145/3726302.3731964
+57. [SIGIR 2024] Transformer-based Reasoning for Learning Evolutionary Chain of Events on Temporal Knowledge Graph. DOI: https://doi.org/10.1145/3626772.3657706
+58. [SIGIR 2024] NativE: Multi-modal Knowledge Graph Completion in the Wild. DOI: https://doi.org/10.1145/3626772.3657800
+59. [SIGIR 2024] Contrast then Memorize: Semantic Neighbor Retrieval-Enhanced Inductive Multimodal Knowledge Graph Completion. DOI: https://doi.org/10.1145/3626772.3657838
+60. [SIGIR 2024] EditKG: Editing Knowledge Graph for Recommendation. DOI: https://doi.org/10.1145/3626772.3657723
+61. [SIGIR 2024] Amazon-KG: A Knowledge Graph Enhanced Cross-Domain Recommendation Dataset. DOI: https://doi.org/10.1145/3626772.3657880
+62. [SIGIR 2024] Fair Sequential Recommendation without User Demographics. DOI: https://doi.org/10.1145/3626772.3657703
+63. [SIGIR 2024] GraphGPT: Graph Instruction Tuning for Large Language Models. DOI: https://doi.org/10.1145/3626772.3657775
+64. [SIGIR 2024] Instruction-based Hypergraph Pretraining. DOI: https://doi.org/10.1145/3626772.3657715
+65. [SIGIR 2024] LLM-enhanced Cascaded Multi-level Learning on Temporal Heterogeneous Graphs. DOI: https://doi.org/10.1145/3626772.3657731
+66. [SIGIR 2024] Hypergraph Convolutional Network for User-Oriented Fairness in Recommender Systems. DOI: https://doi.org/10.1145/3626772.3657737
+67. [SIGIR 2024] DHMAE: A Disentangled Hypergraph Masked Autoencoder for Group Recommendation. DOI: https://doi.org/10.1145/3626772.3657699
+68. [SIGIR 2024] AFDGCF: Adaptive Feature De-correlation Graph Collaborative Filtering for Recommendations. DOI: https://doi.org/10.1145/3626772.3657724
+69. [SIGIR 2024] Exploring the Individuality and Collectivity of Intents behind Interactions for Graph Collaborative Filtering. DOI: https://doi.org/10.1145/3626772.3657738
+70. [SIGIR 2024] Content-based Graph Reconstruction for Cold-start Item Recommendation. DOI: https://doi.org/10.1145/3626772.3657801
+71. [SIGIR 2024] SIGformer: Sign-aware Graph Transformer for Recommendation. DOI: https://doi.org/10.1145/3626772.3657747
+72. [SIGIR 2024] TransGNN: Harnessing the Collaborative Power of Transformers and Graph Neural Networks for Recommender Systems. DOI: https://doi.org/10.1145/3626772.3657721
+73. [SIGIR 2024] Lightweight Embeddings for Graph Collaborative Filtering. DOI: https://doi.org/10.1145/3626772.3657820
+74. [SIGIR 2024] Graph Signal Diffusion Model for Collaborative Filtering. DOI: https://doi.org/10.1145/3626772.3657759
+75. [SIGIR 2024] Disentangled Contrastive Hypergraph Learning for Next POI Recommendation. DOI: https://doi.org/10.1145/3626772.3657726
+76. [SIGIR 2024] SelfGNN: Self-Supervised Graph Neural Networks for Sequential Recommendation. DOI: https://doi.org/10.1145/3626772.3657716
+77. [SIGIR 2024] Grand: A Fast and Accurate Graph Retrieval Framework via Knowledge Distillation. DOI: https://doi.org/10.1145/3626772.3657773
+78. [SIGIR 2024] Intent Distribution based Bipartite Graph Representation Learning. DOI: https://doi.org/10.1145/3626772.3657739
+79. [SIGIR 2024] TGOnline: Enhancing Temporal Graph Learning with Adaptive Online Meta-Learning. DOI: https://doi.org/10.1145/3626772.3657791
+80. [SIGIR 2024] Scalable Community Search over Large-scale Graphs based on Graph Transformer. DOI: https://doi.org/10.1145/3626772.3657771
+81. [SIGIR 2024] Untargeted Adversarial Attack on Knowledge Graph Embeddings. DOI: https://doi.org/10.1145/3626772.3657702
+82. [SIGIR 2024] GPT4Rec: Graph Prompt Tuning for Streaming Recommendation. DOI: https://doi.org/10.1145/3626772.3657720
+83. [SIGIR 2024] Let Me Show You Step by Step: An Interpretable Graph Routing Network for Knowledge-based Visual Question Answering. DOI: https://doi.org/10.1145/3626772.3657790
+84. [SIGIR 2024] CaseLink: Inductive Graph Learning for Legal Case Retrieval. DOI: https://doi.org/10.1145/3626772.3657693
+85. [SIGIR 2024] A Persona-Infused Cross-Task Graph Network for Multimodal Emotion Recognition with Emotion Shift Detection in Conversations. DOI: https://doi.org/10.1145/3626772.3657944
+86. [SIGIR 2024] Graph Diffusive Self-Supervised Learning for Social Recommendation. DOI: https://doi.org/10.1145/3626772.3657962
+87. [SIGIR 2024] Graph Reasoning Enhanced Language Models for Text-to-SQL. DOI: https://doi.org/10.1145/3626772.3657961
+88. [SIGIR 2024] IdmGAE: Importance-Inspired Dynamic Masking for Graph Autoencoders. DOI: https://doi.org/10.1145/3626772.3657913
+89. [SIGIR 2024] Masked Graph Transformer for Large-Scale Recommendation. DOI: https://doi.org/10.1145/3626772.3657971
+90. [SIGIR 2024] Multi-view Mixed Attention for Contrastive Learning on Hypergraphs. DOI: https://doi.org/10.1145/3626772.3657897
+91. [SIGIR 2024] Negative as Positive: Enhancing Out-of-distribution Generalization for Graph Contrastive Learning. DOI: https://doi.org/10.1145/3626772.3657927
+92. [SIGIR 2024] SpherE: Expressive and Interpretable Knowledge Graph Embedding for Set Retrieval. DOI: https://doi.org/10.1145/3626772.3657910
+93. [SIGIR 2024] TouchUp-G: Improving Feature Representation through Graph-Centric Finetuning. DOI: https://doi.org/10.1145/3626772.3657978
+94. [SIGIR 2024] Turbo-CF: Matrix Decomposition-Free Graph Filtering for Fast Recommendation. DOI: https://doi.org/10.1145/3626772.3657916
+95. [SIGIR 2024] Unifying Graph Retrieval and Prompt Tuning for Graph-Grounded Text Classification. DOI: https://doi.org/10.1145/3626772.3657934
+96. [SIGIR 2024] A Question-Answering Assistant over Personal Knowledge Graph. DOI: https://doi.org/10.1145/3626772.3657665
+97. [SIGIR 2024] JPEC: A Novel Graph Neural Network for Competitor Retrieval in Financial Knowledge Graphs. DOI: https://doi.org/10.1145/3626772.3657677
+98. [SIGIR 2024] unKR: A Python Library for Uncertain Knowledge Graph Reasoning by Representation Learning. DOI: https://doi.org/10.1145/3626772.3657661
+99. [SIGIR 2024] Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering. DOI: https://doi.org/10.1145/3626772.3661370
+100. [SIGIR 2024] Graph-Based Audience Expansion Model for Marketing Campaigns. DOI: https://doi.org/10.1145/3626772.3661363
+
+==================================================
+
+## 详细信息
+
+
+## SIGIR (International ACM SIGIR Conference on Research and Development in Information Retrieval ACM) 2025年
+- 来源: http://dblp.uni-trier.de/db/conf/sigir/
+- Contents链接: https://dblp.uni-trier.de/db/conf/sigir/sigir2025.html
+- 找到的论文:
+
+  * MSCRS: Multi-modal Semantic Graph Prompt Learning Framework for Conversational Recommender Systems. [DOI: https://doi.org/10.1145/3726302.3730040]
+  * Rethinking Continual Knowledge Graph Embedding: Benchmarks and Analysis. [DOI: https://doi.org/10.1145/3726302.3730073]
+  * Towards Accurate Social User Geolocation: Mean Shift, Incremental Learning and Graph Convolutional Networks. [DOI: https://doi.org/10.1145/3726302.3730095]
+  * Enhancing the Patent Matching Capability of Large Language Models via the Memory Graph. [DOI: https://doi.org/10.1145/3726302.3729970]
+  * BotBR: Social Bot Detection with Balanced Feature Fusion and Reliability-Enhanced Graph Learning. [DOI: https://doi.org/10.1145/3726302.3729908]
+  * CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs. [DOI: https://doi.org/10.1145/3726302.3729920]
+  * Heterogeneous Graph Embedding Made More Practical. [DOI: https://doi.org/10.1145/3726302.3729993]
+  * Leveraging Large Language Models for Effective Label-free Node Classification in Text-Attributed Graphs. [DOI: https://doi.org/10.1145/3726302.3730021]
+  * Enhancing Homophily in Heterogeneous Graph Contrastive Learning via Connection Strength and Multi-view Self-Expression. [DOI: https://doi.org/10.1145/3726302.3729968]
+  * InfoNCE is a Free Lunch for Semantically guided Graph Contrastive Learning. [DOI: https://doi.org/10.1145/3726302.3730007]
+  * MINTT: Memory Inductive Transfer for Temporal Graph Neural Networks. [DOI: https://doi.org/10.1145/3726302.3730035]
+  * Question-Answer Extraction from Scientific Articles Using Knowledge Graphs and Large Language Models. [DOI: https://doi.org/10.1145/3726302.3730068]
+  * BALI: Enhancing Biomedical Language Representations through Knowledge Graph and Language Model Alignment. [DOI: https://doi.org/10.1145/3726302.3729901]
+  * Flow-guided Direct Preference Optimization for Knowledge Graph Reasoning with Trees. [DOI: https://doi.org/10.1145/3726302.3729980]
+  * Segmentation Similarity Enhanced Semantic Related Entity Fusion for Multi-modal Knowledge Graph Completion. [DOI: https://doi.org/10.1145/3726302.3730082]
+  * From Knowledge Forgetting to Accumulation: Evolutionary Relation Path Passing for Lifelong Knowledge Graph Embedding. [DOI: https://doi.org/10.1145/3726302.3729982]
+  * AdaRPT: An Adaptive Rule Pattern Transfer Model for Fully Inductive Knowledge Graph Reasoning. [DOI: https://doi.org/10.1145/3726302.3729889]
+  * HyperG: Hypergraph-Enhanced LLMs for Structured Knowledge. [DOI: https://doi.org/10.1145/3726302.3730002]
+  * Comprehending Knowledge Graphs with Large Language Models for Recommender Systems. [DOI: https://doi.org/10.1145/3726302.3729932]
+  * InstructRAG: Leveraging Retrieval-Augmented Generation on Instruction Graphs for LLM-Based Task Planning. [DOI: https://doi.org/10.1145/3726302.3730009]
+  * Retrieval Augmented Generation for Dynamic Graph Modeling. [DOI: https://doi.org/10.1145/3726302.3729958]
+  * Disentangled Graph Debiasing for Next POI Recommendation. [DOI: https://doi.org/10.1145/3726302.3729952]
+  * COHESION: Composite Graph Convolutional Network with Dual-Stage Fusion for Multimodal Recommendation. [DOI: https://doi.org/10.1145/3726302.3729927]
+  * Adaptive Graph Integration for Cross-Domain Recommendation via Heterogeneous Graph Coordinators. [DOI: https://doi.org/10.1145/3726302.3729886]
+  * Graph Spectral Filtering with Chebyshev Interpolation for Recommendation. [DOI: https://doi.org/10.1145/3726302.3729991]
+  * Hypercomplex Knowledge Graph-Aware Recommendation. [DOI: https://doi.org/10.1145/3726302.3730001]
+  * Balancing Self-Presentation and Self-Hiding for Exposure-Aware Recommendation Based on Graph Contrastive Learning. [DOI: https://doi.org/10.1145/3726302.3729900]
+  * Invariance Matters: Empowering Social Recommendation via Graph Invariant Learning. [DOI: https://doi.org/10.1145/3726302.3730013]
+  * CORONA: A Coarse-to-Fine Framework for Graph-based Recommendation with Large Language Models. [DOI: https://doi.org/10.1145/3726302.3729937]
+  * Bridging Short Videos and Streamers with Multi-Graph Contrastive Learning for Live Streaming Recommendation. [DOI: https://doi.org/10.1145/3726302.3729914]
+  * Rating-Aware Homogeneous Review Graphs and User Likes/Dislikes Differentiation for Effective Recommendations. [DOI: https://doi.org/10.1145/3726302.3730069]
+  * Locality-Sensitive Indexing for Graph-Based Approximate Nearest Neighbor Search. [DOI: https://doi.org/10.1145/3726302.3730028]
+  * UPPR+: Scaling Uncertain Personalised PageRank Computation on Billion-Sized Graphs with Mutually Exclusive Edges. [DOI: https://doi.org/10.1145/3726302.3730113]
+  * Highly Efficient Disk-based Nearest Neighbor Search on Extended Neighborhood Graph. [DOI: https://doi.org/10.1145/3726302.3729996]
+  * IGP: Efficient Multi-Vector Retrieval via Proximity Graph Index. [DOI: https://doi.org/10.1145/3726302.3730004]
+  * HTGformer: Heterogeneous Temporal Graph Transformer. [DOI: https://doi.org/10.1145/3726302.3730209]
+  * Improving Link Sign Prediction in Signed Bipartite Graphs via Balanced Line Graphs. [DOI: https://doi.org/10.1145/3726302.3730210]
+  * UTCS: Effective Unsupervised Temporal Community Search with Pre-training of Temporal Dynamics and Subgraph Knowledge. [DOI: https://doi.org/10.1145/3726302.3730263]
+  * Graph-Based Multimodal Contrastive Learning for Chart Question Answering. [DOI: https://doi.org/10.1145/3726302.3730204]
+  * Graph-Augmented Retrieval with Memory-Driven Reasoning and Constraint-Aware Filtering for MultiHop QA. [DOI: https://doi.org/10.1145/3726302.3730203]
+  * Squeeze and Excitation: A Weighted Graph Contrastive Learning for Collaborative Filtering. [DOI: https://doi.org/10.1145/3726302.3730251]
+  * ReCDAP: Relation-based Conditional Diffusion with Attention Pooling for Few-Shot Knowledge Graph Completion. [DOI: https://doi.org/10.1145/3726302.3730241]
+  * More Than Just A Conversation: A Multi-agent Reasoning Graph Knowledge Distillation for Conversational Stance Detection. [DOI: https://doi.org/10.1145/3726302.3730232]
+  * KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking. [DOI: https://doi.org/10.1145/3726302.3730217]
+  * The Effects of Demographic Instructions on LLM Personas. [DOI: https://doi.org/10.1145/3726302.3730255]
+  * RSGEA: Relationship Structure Line Graph for Semi-supervised Entity Alignment based on Edge Weight Adjustment. [DOI: https://doi.org/10.1145/3726302.3730247]
+  * Towards Enhanced Agricultural Information Access in Kiswahili: Integrating Knowledge Graphs and Retrieval-Augmented Generation. [DOI: https://doi.org/10.1145/3726302.3730271]
+  * A Reproducibility Study of Graph-Based Legal Case Retrieval. [DOI: https://doi.org/10.1145/3726302.3730282]
+  * Benchmarking Recommendation, Classification, and Tracing Based on Hugging Face Knowledge Graph. [DOI: https://doi.org/10.1145/3726302.3730277]
+  * SAGraph: A Large-Scale Social Graph Dataset with Comprehensive Context for Influencer Selection in Marketing. [DOI: https://doi.org/10.1145/3726302.3730334]
+  * Fact Verification in Knowledge Graphs Using LLMs. [DOI: https://doi.org/10.1145/3726302.3730142]
+  * ROKSANA: An Open-Source Toolkit for Robust Graph-Based Keyword Search. [DOI: https://doi.org/10.1145/3726302.3730154]
+  * Conversational Bibliographic Search. [DOI: https://doi.org/10.1145/3726302.3730144]
+  * Graph Isomorphism Network-Based Cohort Modeling In Click-Through Rate Prediction. [DOI: https://doi.org/10.1145/3726302.3731936]
+  * Inquiry Assistant Using LLM-Generated Knowledge Graphs. [DOI: https://doi.org/10.1145/3726302.3731956]
+  * Ontology-Guided Knowledge Graph Retrieval for Multi-Hop and Cross-Granularity Store Fulfillment Queries. [DOI: https://doi.org/10.1145/3726302.3731964]
+
+## SIGIR (International ACM SIGIR Conference on Research and Development in Information Retrieval ACM) 2024年
+- 来源: http://dblp.uni-trier.de/db/conf/sigir/
+- Contents链接: https://dblp.uni-trier.de/db/conf/sigir/sigir2024.html
+- 找到的论文:
+
+  * Transformer-based Reasoning for Learning Evolutionary Chain of Events on Temporal Knowledge Graph. [DOI: https://doi.org/10.1145/3626772.3657706]
+  * NativE: Multi-modal Knowledge Graph Completion in the Wild. [DOI: https://doi.org/10.1145/3626772.3657800]
+  * Contrast then Memorize: Semantic Neighbor Retrieval-Enhanced Inductive Multimodal Knowledge Graph Completion. [DOI: https://doi.org/10.1145/3626772.3657838]
+  * EditKG: Editing Knowledge Graph for Recommendation. [DOI: https://doi.org/10.1145/3626772.3657723]
+  * Amazon-KG: A Knowledge Graph Enhanced Cross-Domain Recommendation Dataset. [DOI: https://doi.org/10.1145/3626772.3657880]
+  * Fair Sequential Recommendation without User Demographics. [DOI: https://doi.org/10.1145/3626772.3657703]
+  * GraphGPT: Graph Instruction Tuning for Large Language Models. [DOI: https://doi.org/10.1145/3626772.3657775]
+  * Instruction-based Hypergraph Pretraining. [DOI: https://doi.org/10.1145/3626772.3657715]
+  * LLM-enhanced Cascaded Multi-level Learning on Temporal Heterogeneous Graphs. [DOI: https://doi.org/10.1145/3626772.3657731]
+  * Hypergraph Convolutional Network for User-Oriented Fairness in Recommender Systems. [DOI: https://doi.org/10.1145/3626772.3657737]
+  * DHMAE: A Disentangled Hypergraph Masked Autoencoder for Group Recommendation. [DOI: https://doi.org/10.1145/3626772.3657699]
+  * AFDGCF: Adaptive Feature De-correlation Graph Collaborative Filtering for Recommendations. [DOI: https://doi.org/10.1145/3626772.3657724]
+  * Exploring the Individuality and Collectivity of Intents behind Interactions for Graph Collaborative Filtering. [DOI: https://doi.org/10.1145/3626772.3657738]
+  * Content-based Graph Reconstruction for Cold-start Item Recommendation. [DOI: https://doi.org/10.1145/3626772.3657801]
+  * SIGformer: Sign-aware Graph Transformer for Recommendation. [DOI: https://doi.org/10.1145/3626772.3657747]
+  * TransGNN: Harnessing the Collaborative Power of Transformers and Graph Neural Networks for Recommender Systems. [DOI: https://doi.org/10.1145/3626772.3657721]
+  * Lightweight Embeddings for Graph Collaborative Filtering. [DOI: https://doi.org/10.1145/3626772.3657820]
+  * Graph Signal Diffusion Model for Collaborative Filtering. [DOI: https://doi.org/10.1145/3626772.3657759]
+  * Disentangled Contrastive Hypergraph Learning for Next POI Recommendation. [DOI: https://doi.org/10.1145/3626772.3657726]
+  * SelfGNN: Self-Supervised Graph Neural Networks for Sequential Recommendation. [DOI: https://doi.org/10.1145/3626772.3657716]
+  * Grand: A Fast and Accurate Graph Retrieval Framework via Knowledge Distillation. [DOI: https://doi.org/10.1145/3626772.3657773]
+  * Intent Distribution based Bipartite Graph Representation Learning. [DOI: https://doi.org/10.1145/3626772.3657739]
+  * TGOnline: Enhancing Temporal Graph Learning with Adaptive Online Meta-Learning. [DOI: https://doi.org/10.1145/3626772.3657791]
+  * Scalable Community Search over Large-scale Graphs based on Graph Transformer. [DOI: https://doi.org/10.1145/3626772.3657771]
+  * Untargeted Adversarial Attack on Knowledge Graph Embeddings. [DOI: https://doi.org/10.1145/3626772.3657702]
+  * GPT4Rec: Graph Prompt Tuning for Streaming Recommendation. [DOI: https://doi.org/10.1145/3626772.3657720]
+  * Let Me Show You Step by Step: An Interpretable Graph Routing Network for Knowledge-based Visual Question Answering. [DOI: https://doi.org/10.1145/3626772.3657790]
+  * CaseLink: Inductive Graph Learning for Legal Case Retrieval. [DOI: https://doi.org/10.1145/3626772.3657693]
+  * A Persona-Infused Cross-Task Graph Network for Multimodal Emotion Recognition with Emotion Shift Detection in Conversations. [DOI: https://doi.org/10.1145/3626772.3657944]
+  * Graph Diffusive Self-Supervised Learning for Social Recommendation. [DOI: https://doi.org/10.1145/3626772.3657962]
+  * Graph Reasoning Enhanced Language Models for Text-to-SQL. [DOI: https://doi.org/10.1145/3626772.3657961]
+  * IdmGAE: Importance-Inspired Dynamic Masking for Graph Autoencoders. [DOI: https://doi.org/10.1145/3626772.3657913]
+  * Masked Graph Transformer for Large-Scale Recommendation. [DOI: https://doi.org/10.1145/3626772.3657971]
+  * Multi-view Mixed Attention for Contrastive Learning on Hypergraphs. [DOI: https://doi.org/10.1145/3626772.3657897]
+  * Negative as Positive: Enhancing Out-of-distribution Generalization for Graph Contrastive Learning. [DOI: https://doi.org/10.1145/3626772.3657927]
+  * SpherE: Expressive and Interpretable Knowledge Graph Embedding for Set Retrieval. [DOI: https://doi.org/10.1145/3626772.3657910]
+  * TouchUp-G: Improving Feature Representation through Graph-Centric Finetuning. [DOI: https://doi.org/10.1145/3626772.3657978]
+  * Turbo-CF: Matrix Decomposition-Free Graph Filtering for Fast Recommendation. [DOI: https://doi.org/10.1145/3626772.3657916]
+  * Unifying Graph Retrieval and Prompt Tuning for Graph-Grounded Text Classification. [DOI: https://doi.org/10.1145/3626772.3657934]
+  * A Question-Answering Assistant over Personal Knowledge Graph. [DOI: https://doi.org/10.1145/3626772.3657665]
+  * JPEC: A Novel Graph Neural Network for Competitor Retrieval in Financial Knowledge Graphs. [DOI: https://doi.org/10.1145/3626772.3657677]
+  * unKR: A Python Library for Uncertain Knowledge Graph Reasoning by Representation Learning. [DOI: https://doi.org/10.1145/3626772.3657661]
+  * Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering. [DOI: https://doi.org/10.1145/3626772.3661370]
+  * Graph-Based Audience Expansion Model for Marketing Campaigns. [DOI: https://doi.org/10.1145/3626772.3661363]

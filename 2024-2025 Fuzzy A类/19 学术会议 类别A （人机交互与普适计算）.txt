@@ -1,0 +1,18 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [CHI 2025] Scaling Analysis of Creative Activity Traces via Fuzzy Linkography. DOI: https://doi.org/10.1145/3706599.3720184
+
+==================================================
+
+## 详细信息
+
+
+## CHI (ACM Conference on Human Factors in Computing Systems ACM) 2025年
+- 来源: http://dblp.uni-trier.de/db/conf/chi
+- Contents链接: https://dblp.uni-trier.de/db/conf/chi/chi2025a.html
+- 找到的论文:
+
+  * Scaling Analysis of Creative Activity Traces via Fuzzy Linkography. [DOI: https://doi.org/10.1145/3706599.3720184]

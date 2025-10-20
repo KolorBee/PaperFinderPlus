@@ -1,0 +1,28 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [MM 2024] Cefdet: Cognitive Effectiveness Network Based on Fuzzy Inference for Action Detection. DOI: https://doi.org/10.1145/3664647.3681226
+2. [MM 2024] Federated Fuzzy C-means with Schatten-p Norm Minimization. DOI: https://doi.org/10.1145/3664647.3681557
+3. [SIGGRAPH 2024] A Unified Differentiable Boolean Operator with Fuzzy Logic. DOI: https://doi.org/10.1145/3641519.3657484
+
+==================================================
+
+## 详细信息
+
+
+## MM (MM ACM International Conference on Multimedia ACM) 2024年
+- 来源: http://dblp.uni-trier.de/db/conf/mm/
+- Contents链接: https://dblp.uni-trier.de/db/conf/mm/mm2024.html
+- 找到的论文:
+
+  * Cefdet: Cognitive Effectiveness Network Based on Fuzzy Inference for Action Detection. [DOI: https://doi.org/10.1145/3664647.3681226]
+  * Federated Fuzzy C-means with Schatten-p Norm Minimization. [DOI: https://doi.org/10.1145/3664647.3681557]
+
+## SIGGRAPH (ACM Special Interest Group on Computer Graphics ACM) 2024年
+- 来源: http://dblp.uni-trier.de/db/conf/siggraph/index.html
+- Contents链接: https://dblp.uni-trier.de/db/conf/siggraph/siggraph2024.html
+- 找到的论文:
+
+  * A Unified Differentiable Boolean Operator with Fuzzy Logic. [DOI: https://doi.org/10.1145/3641519.3657484]

@@ -1,0 +1,26 @@
+# 包含 'blockchain' 关键词的论文
+==================================================
+
+## 所有区块链相关论文一览
+
+1. [TIP 2024] Fast Projected Fuzzy Clustering With Anchor Guidance for Multimodal Remote Sensing Imagery. DOI: https://doi.org/10.1109/TIP.2024.3444323
+2. [TVCG 2024] Speech-Driven Personalized Gesture Synthetics: Harnessing Automatic Fuzzy Feature Inference. DOI: https://doi.org/10.1109/TVCG.2024.3393236
+
+==================================================
+
+## 详细信息
+
+
+## TIP (IEEE Transactions on Image Processing IEEE) 2024年
+- 来源: http://dblp.uni-trier.de/db/journals/tip/
+- 卷期: https://dblp.uni-trier.de/db/journals/tip/tip33.html
+- 找到的论文:
+
+  * Fast Projected Fuzzy Clustering With Anchor Guidance for Multimodal Remote Sensing Imagery. [DOI: https://doi.org/10.1109/TIP.2024.3444323]
+
+## TVCG (IEEE Transactions on Visualization and Computer Graphics IEEE) 2024年
+- 来源: http://dblp.uni-trier.de/db/journals/tvcg/
+- 卷期: https://dblp.uni-trier.de/db/journals/tvcg/tvcg30.html
+- 找到的论文:
+
+  * Speech-Driven Personalized Gesture Synthetics: Harnessing Automatic Fuzzy Feature Inference. [DOI: https://doi.org/10.1109/TVCG.2024.3393236]
