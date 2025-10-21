@@ -6,10 +6,22 @@ from bs4 import BeautifulSoup
 import re
 import time
 from urllib.parse import urljoin
-from core.config import PROXIES, TIMEOUT, TARGET_YEARS
+from core.config import PROXIES, TIMEOUT, TARGET_YEARS, TARGET_KEYWORDS
 
 # 存储已查询过的链接
 queried_links = set()
+
+# 关键词配置（支持在 core.config 中设置 TARGET_KEYWORDS 为字符串或列表）
+try:
+    if isinstance(TARGET_KEYWORDS, (list, tuple)):
+        KEYWORDS = [str(k) for k in TARGET_KEYWORDS if k]
+    else:
+        KEYWORDS = [str(TARGET_KEYWORDS)] if TARGET_KEYWORDS else ["Graph"]
+except Exception:
+    KEYWORDS = ["Graph"]
+
+# 预编译正则用于标题匹配（忽略大小写）
+KEYWORD_REGEX = re.compile('|'.join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
 
 def get_recent_volume_links(url, force=False):
     """获取指定URL页面上近三年的卷期链接
@@ -160,8 +172,8 @@ def find_blockchain_papers(url):
         
         for element in title_elements:
             title = element.get_text().strip()
-            # 关键词替换
-            if re.search(r'Graph', title, re.IGNORECASE):
+            # 关键词匹配（使用配置中的关键词）
+            if KEYWORD_REGEX.search(title):
                 print(f"找到区块链相关标题: {title}")
                 if len(title) > 10 and len(title) < 300:  # 过滤过短或过长的标题
                     cleaned_title = re.sub(r'\s+', ' ', title).strip()
@@ -190,8 +202,8 @@ def find_blockchain_papers(url):
             entries = soup.select('li.entry, .data, .publ-list > *')
             for entry in entries:
                 entry_text = entry.get_text().lower()
-                # 关键词替换
-                if 'Graph' in entry_text:
+                # 关键词匹配（使用配置中的关键词，大小写不敏感）
+                if any(k.lower() in entry_text for k in KEYWORDS):
                     # 从条目中提取标题
                     title_element = entry.select_one('.title') or entry
                     title = title_element.get_text().strip()
