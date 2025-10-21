@@ -3,6 +3,7 @@
 """
 import os
 import re
+from core.config import TARGET_KEYWORDS, TARGET_KEYWORDS_MODE
 
 # 从excel_handler模块导入DOI提取函数，保持一致性
 # 如果excel_handler不可用，则在本模块中实现该函数
@@ -81,7 +82,22 @@ def save_topic_results(results, all_papers, topic_name, output_file, is_journal=
             
             # 先添加所有论文的总结
             if all_papers:
-                file.write("## 所有区块链相关论文一览\n\n")
+                # 构建动态标题，基于配置中的关键词和匹配模式
+                try:
+                    if isinstance(TARGET_KEYWORDS, (list, tuple)):
+                        kws = [str(k).strip() for k in TARGET_KEYWORDS if k]
+                    else:
+                        kws = [str(TARGET_KEYWORDS)] if TARGET_KEYWORDS else []
+                except Exception:
+                    kws = [str(TARGET_KEYWORDS)]
+
+                joined = ', '.join(kws) if kws else '指定'
+                if TARGET_KEYWORDS_MODE and TARGET_KEYWORDS_MODE.upper() == 'AND':
+                    title_line = f"## 所有同时包含 {joined} 关键词的论文一览\n\n"
+                else:
+                    title_line = f"## 所有包含任一关键词 ({joined}) 的论文一览\n\n"
+
+                file.write(title_line)
                 for i, paper in enumerate(all_papers, 1):
                     formatted_paper = format_paper_with_doi(paper)
                     file.write(f"{i}. {formatted_paper}\n")
@@ -92,7 +108,20 @@ def save_topic_results(results, all_papers, topic_name, output_file, is_journal=
                 file.write("## 详细信息\n\n")
                 file.write("\n".join(results))
             else:
-                file.write("未找到包含 blockchain 关键词的论文。")
+                # 根据配置动态生成提示信息
+                try:
+                    if isinstance(TARGET_KEYWORDS, (list, tuple)):
+                        kws = [str(k).strip() for k in TARGET_KEYWORDS if k]
+                    else:
+                        kws = [str(TARGET_KEYWORDS)] if TARGET_KEYWORDS else []
+                except Exception:
+                    kws = [str(TARGET_KEYWORDS)]
+
+                joined = ', '.join(kws) if kws else '指定'
+                if TARGET_KEYWORDS_MODE and TARGET_KEYWORDS_MODE.upper() == 'AND':
+                    file.write(f"未找到同时包含 {joined} 关键词的论文。")
+                else:
+                    file.write(f"未找到包含任一关键词 ({joined}) 的论文。")
         
         return True
     except Exception as e:

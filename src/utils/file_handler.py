@@ -5,6 +5,24 @@
 import os
 import re
 from core.config import OUTPUT_DIR, JOURNAL_OUTPUT_FORMAT, CONFERENCE_OUTPUT_FORMAT, OUTPUT_FORMAT
+from core.config import TARGET_KEYWORDS, TARGET_KEYWORDS_MODE
+
+
+def _build_keyword_desc():
+    """构建关键词描述字符串，用于日志输出"""
+    try:
+        if isinstance(TARGET_KEYWORDS, (list, tuple)):
+            kws = [str(k).strip() for k in TARGET_KEYWORDS if k]
+        else:
+            kws = [str(TARGET_KEYWORDS)] if TARGET_KEYWORDS else []
+    except Exception:
+        kws = [str(TARGET_KEYWORDS)]
+
+    joined = ', '.join(kws) if kws else '指定'
+    if TARGET_KEYWORDS_MODE and TARGET_KEYWORDS_MODE.upper() == 'AND':
+        return f"同时包含 {joined} 关键词"
+    else:
+        return f"包含任一关键词 ({joined})"
 
 # 导入文本和Excel处理模块
 try:
@@ -247,7 +265,8 @@ def save_venue_result(venue_name, venue_full_name, year, papers, source_link,
         is_journal: 是否为期刊
     """
     if not papers:
-        print(f"未在 {venue_name} {year}年 找到区块链相关论文，跳过保存")
+        kw_desc = _build_keyword_desc()
+        print(f"未在 {venue_name} {year}年 找到{kw_desc}的论文，跳过保存")
         return
     
     if not topic_name:

@@ -14,6 +14,41 @@ try:
 except ImportError:
     EXCEL_SUPPORTED = False
     print("警告：未安装pandas或openpyxl库，无法输出Excel格式文件")
+except ImportError:
+    EXCEL_SUPPORTED = False
+    print("警告：未安装pandas或openpyxl库，无法输出Excel格式文件")
+
+
+def _ensure_remove_sheet(writer, output_file, sheet_name):
+    """确保在 workbook 中移除指定名称的工作表，以便后续写入可以创建/替换它。
+
+    writer: pandas ExcelWriter（可能包含 .book）
+    output_file: Excel 文件路径（在 writer.book 不存在时可用于加载）
+    sheet_name: 要移除的工作表名
+    """
+    try:
+        book = getattr(writer, 'book', None)
+        # 如果 writer 没有 book 属性但文件存在，尝试加载工作簿
+        if book is None and os.path.exists(output_file):
+            book = openpyxl.load_workbook(output_file)
+            writer.book = book
+
+        if book is None:
+            return
+
+        if sheet_name in book.sheetnames:
+            # 直接从 workbook 中移除该 sheet
+            sheet = book[sheet_name]
+            book.remove(sheet)
+            # 尝试同步 writer.sheets 映射（若存在）
+            if hasattr(writer, 'sheets'):
+                try:
+                    writer.sheets = {ws.title: ws for ws in book.worksheets}
+                except Exception:
+                    pass
+    except Exception:
+        # 容错：如果移除失败也不要阻塞写入流程
+        return
 
 def check_excel_support():
     """检查是否支持Excel输出"""
@@ -156,42 +191,41 @@ def save_topic_results(results, all_papers, topic_name, output_file, is_journal=
                                     current_year = match.group(2)
                     
                     # 创建ExcelWriter对象进行更新
-                    with pd.ExcelWriter(output_file, engine='openpyxl', mode='a' if openpyxl.__version__ >= '3.0.0' else 'w') as writer:
+                    mode_str = 'a' if openpyxl.__version__ >= '3.0.0' else 'w'
+                    with pd.ExcelWriter(output_file, engine='openpyxl', mode=mode_str) as writer:
                         # 对于旧版openpyxl，需要先加载文件
                         if openpyxl.__version__ < '3.0.0' and os.path.exists(output_file):
                             writer.book = openpyxl.load_workbook(output_file)
                             writer.sheets = {ws.title: ws for ws in writer.book.worksheets}
-                        
+
+                        # 安全获取 writer.sheets（某些 pandas 版本下 writer 可能不公开该属性）
+                        writer_sheets = getattr(writer, 'sheets', {})
+
                         # 更新总览工作表 - 只做追加，不考虑内容匹配
                         if "论文总览" in sheet_names:
                             # 合并现有数据和新数据，简单追加
                             current_data = existing_data["论文总览"]
                             new_data = pd.DataFrame(overview_data)
                             updated_data = pd.concat([current_data, new_data], ignore_index=True)
-                            
-                            # 如果是追加模式，需要删除原表格再写入
-                            if writer.mode == 'a' and "论文总览" in writer.sheets:
-                                # 删除现有的工作表
-                                idx = writer.book.worksheets.index(writer.sheets["论文总览"])
-                                writer.book.remove(writer.book.worksheets[idx])
-                                # 创建新的工作表
-                                writer.book.create_sheet("论文总览", idx)
-                            
+
+                            # 如果是追加模式，需要先移除已存在的 '论文总览'，避免 to_excel 抛出错误
+                            if mode_str == 'a':
+                                _ensure_remove_sheet(writer, output_file, "论文总览")
+
                             # 写入更新后的数据
                             updated_data.to_excel(writer, sheet_name="论文总览", index=False)
                         else:
                             # 创建新的总览工作表
                             pd.DataFrame(overview_data).to_excel(writer, sheet_name="论文总览", index=False)
-                        
+
                         # 保持其他工作表不变（如果有的话）
                         for sheet in sheet_names:
                             if sheet != "论文总览":
                                 # 如果是追加模式，已有的工作表不需要再次写入
-                                if not (writer.mode == 'a' and sheet in writer.sheets):
+                                if not (mode_str == 'a' and sheet in writer_sheets):
                                     existing_data[sheet].to_excel(writer, sheet_name=sheet, index=False)
                 
                     # 保存并应用格式
-                    writer.close()
                     wb = openpyxl.load_workbook(output_file)
                     for sheet_name in wb.sheetnames:
                         apply_excel_formatting(wb[sheet_name])
@@ -300,12 +334,15 @@ def save_venue_result(venue_name, venue_full_name, year, papers, source_link,
                         })
                     
                     # 创建新的Excel写入器
-                    with pd.ExcelWriter(output_file, engine='openpyxl', mode='a' if openpyxl.__version__ >= '3.0.0' else 'w') as writer:
+                    mode_str = 'a' if openpyxl.__version__ >= '3.0.0' else 'w'
+                    with pd.ExcelWriter(output_file, engine='openpyxl', mode=mode_str) as writer:
                         # 对于旧版openpyxl，需要先删除文件
                         if openpyxl.__version__ < '3.0.0' and os.path.exists(output_file):
                             writer.book = openpyxl.load_workbook(output_file)
                             writer.sheets = {ws.title: ws for ws in writer.book.worksheets}
-                        
+
+                        writer_sheets = getattr(writer, 'sheets', {})
+
                         # 写入总览工作表
                         if "论文总览" in sheet_names:
                             # 更新总览 - 简单追加数据，不考虑内容匹配
@@ -313,29 +350,24 @@ def save_venue_result(venue_name, venue_full_name, year, papers, source_link,
                             new_data = pd.DataFrame(new_overview_rows)
                             # 直接追加，不检查重复
                             updated_data = pd.concat([current_data, new_data], ignore_index=True)
-                            
-                            # 如果是追加模式，需要删除原表格再写入
-                            if writer.mode == 'a' and "论文总览" in writer.sheets:
-                                # 删除现有的工作表
-                                idx = writer.book.worksheets.index(writer.sheets["论文总览"])
-                                writer.book.remove(writer.book.worksheets[idx])
-                                # 创建新的工作表
-                                writer.book.create_sheet("论文总览", idx)
-                            
+
+                            # 如果是追加模式，需要先移除已存在的 '论文总览'，避免 to_excel 抛出错误
+                            if mode_str == 'a':
+                                _ensure_remove_sheet(writer, output_file, "论文总览")
+
                             updated_data.to_excel(writer, sheet_name="论文总览", index=False)
                         else:
                             # 创建新的总览工作表
                             pd.DataFrame(new_overview_rows).to_excel(writer, sheet_name="论文总览", index=False)
-                        
+
                         # 保持其他工作表不变（如果有的话）
                         for sheet in sheet_names:
                             if sheet != "论文总览":
                                 # 如果是追加模式，已有的工作表不需要再次写入
-                                if not (writer.mode == 'a' and sheet in writer.sheets):
+                                if not (mode_str == 'a' and sheet in writer_sheets):
                                     existing_data[sheet].to_excel(writer, sheet_name=sheet, index=False)
                     
                     # 保存Excel后应用格式
-                    writer.close()
                     wb = openpyxl.load_workbook(output_file)
                     for sheet_name in wb.sheetnames:
                         apply_excel_formatting(wb[sheet_name])

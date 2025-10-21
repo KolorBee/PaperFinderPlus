@@ -7,6 +7,25 @@ import re
 import time
 from urllib.parse import urljoin
 from core.config import PROXIES, TIMEOUT, TARGET_YEARS, TARGET_KEYWORDS
+from core.config import TARGET_KEYWORDS_MODE, TARGET_KEYWORDS_WORD_BOUNDARY, MATCH_SCOPE
+from core.config import TARGET_KEYWORDS as CONFIG_KEYWORDS
+
+
+def _kw_desc():
+    """返回用于日志的关键词描述字符串"""
+    try:
+        if isinstance(CONFIG_KEYWORDS, (list, tuple)):
+            kws = [str(k).strip() for k in CONFIG_KEYWORDS if k]
+        else:
+            kws = [str(CONFIG_KEYWORDS)] if CONFIG_KEYWORDS else []
+    except Exception:
+        kws = [str(CONFIG_KEYWORDS)]
+
+    joined = ', '.join(kws) if kws else '指定'
+    if TARGET_KEYWORDS_MODE and TARGET_KEYWORDS_MODE.upper() == 'AND':
+        return f"同时包含 {joined} 关键词"
+    else:
+        return f"包含任一关键词 ({joined})"
 
 # 存储已查询过的链接
 queried_links = set()
@@ -22,6 +41,45 @@ except Exception:
 
 # 预编译正则用于标题匹配（忽略大小写）
 KEYWORD_REGEX = re.compile('|'.join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
+
+
+def match_keywords(text, keywords, mode='AND', word_boundary=False):
+    """
+    在给定文本中匹配关键词。
+
+    Args:
+        text: 要搜索的文本
+        keywords: 关键词列表
+        mode: 'AND' 或 'OR'
+        word_boundary: 是否对关键词使用词边界（对英文有效）
+
+    Returns:
+        (matched: bool, matched_keywords: list)
+    """
+    if not text or not keywords:
+        return False, []
+
+    matched = []
+    for k in keywords:
+        if not k:
+            continue
+        # 为短语和特殊字符安全构建正则
+        esc = re.escape(k)
+        if word_boundary:
+            # 允许短语中间有任意空白
+            esc = esc.replace(r'\ ', r'\s+')
+            pattern = rf"\b{esc}\b"
+        else:
+            esc = esc.replace(r'\ ', r'\s+')
+            pattern = esc
+
+        if re.search(pattern, text, re.IGNORECASE):
+            matched.append(k)
+
+    if mode == 'AND':
+        return (len(matched) == len([k for k in keywords if k])), matched
+    else:
+        return (len(matched) > 0), matched
 
 def get_recent_volume_links(url, force=False):
     """获取指定URL页面上近三年的卷期链接
@@ -173,8 +231,9 @@ def find_blockchain_papers(url):
         for element in title_elements:
             title = element.get_text().strip()
             # 关键词匹配（使用配置中的关键词）
-            if KEYWORD_REGEX.search(title):
-                print(f"找到区块链相关标题: {title}")
+            title_matched, title_matched_keywords = match_keywords(title, TARGET_KEYWORDS, mode=TARGET_KEYWORDS_MODE, word_boundary=TARGET_KEYWORDS_WORD_BOUNDARY)
+            if title_matched:
+                print(f"找到{_kw_desc()}标题: {title}")
                 if len(title) > 10 and len(title) < 300:  # 过滤过短或过长的标题
                     cleaned_title = re.sub(r'\s+', ' ', title).strip()
                     
@@ -193,17 +252,18 @@ def find_blockchain_papers(url):
                     
                     if paper_entry not in blockchain_papers:
                         blockchain_papers.append(paper_entry)
-                        print(f"添加区块链相关论文: {paper_entry}")
+                        print(f"添加{_kw_desc()}论文: {paper_entry}")
         
-        # 如果没有找到论文，尝试在整个页面内容中搜索
-        if not blockchain_papers:
-            print("使用备用方法查找区块链论文...")
+        # 如果没有找到论文，根据 MATCH_SCOPE 决定是否尝试在整个页面内容中搜索
+        if not blockchain_papers and MATCH_SCOPE != 'title':
+            print(f"使用备用方法查找{_kw_desc()}论文...")
             # 尝试查找所有可能的文章条目
             entries = soup.select('li.entry, .data, .publ-list > *')
             for entry in entries:
                 entry_text = entry.get_text().lower()
                 # 关键词匹配（使用配置中的关键词，大小写不敏感）
-                if any(k.lower() in entry_text for k in KEYWORDS):
+                entry_matched, entry_matched_keywords = match_keywords(entry.get_text(), TARGET_KEYWORDS, mode=TARGET_KEYWORDS_MODE, word_boundary=TARGET_KEYWORDS_WORD_BOUNDARY)
+                if entry_matched:
                     # 从条目中提取标题
                     title_element = entry.select_one('.title') or entry
                     title = title_element.get_text().strip()
@@ -222,7 +282,7 @@ def find_blockchain_papers(url):
                             
                         if paper_entry not in blockchain_papers:
                             blockchain_papers.append(paper_entry)
-                            print(f"通过备用方法添加区块链相关论文: {paper_entry}")
+                            print(f"通过备用方法添加{_kw_desc()}论文: {paper_entry}")
         
         return blockchain_papers
     except Exception as e:

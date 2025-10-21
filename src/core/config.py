@@ -13,11 +13,32 @@ PROXIES = None
 # 请求超时时间设置为30秒
 TIMEOUT = 30
 
-# 目标年份
-TARGET_YEARS = ["2024", "2025"]
+
 
 # 关键词替换
-TARGET_KEYWORDS = ["Graph"] 
+# 单关键词：
+#  TARGET_KEYWORDS = ["blockchain"]
+# 多关键词（AND，默认）：
+#  TARGET_KEYWORDS = ["blockchain", "ledger"]
+# 切换到 OR 模式：
+#  TARGET_KEYWORDS_MODE = 'OR'
+# 启用词边界（英文场景）：
+#  TARGET_KEYWORDS_WORD_BOUNDARY = True
+
+TARGET_KEYWORDS = ["Graph","Semantic"] 
+
+# 关键词匹配模式: 'AND' 表示必须同时包含所有关键词, 'OR' 表示任一关键词即可
+TARGET_KEYWORDS_MODE = 'AND'
+
+# 是否在关键词匹配时使用词边界（word boundary）。
+# 对于中文关键词通常设置为 False，因为 \b 对中文效果有限。
+TARGET_KEYWORDS_WORD_BOUNDARY = False
+
+# 匹配范围: 'title' 只匹配标题, 'entry' 只匹配条目整体, 'title_or_entry' 先尝试标题再条目（默认）
+MATCH_SCOPE = 'title'
+
+# 目标年份 TARGET_YEARS = ["2024", "2025"] 或者TARGET_YEARS = ["2024"]
+TARGET_YEARS = ["2024", "2025"]
 
 # 输入配置
 INPUT_DIR = os.path.join(ROOT_DIR, "input")  # 输入目录，设置为根目录下的input
