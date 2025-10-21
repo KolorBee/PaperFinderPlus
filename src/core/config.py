@@ -25,7 +25,7 @@ TIMEOUT = 30
 # 启用词边界（英文场景）：
 #  TARGET_KEYWORDS_WORD_BOUNDARY = True
 
-TARGET_KEYWORDS = ["Graph","Semantic"] 
+TARGET_KEYWORDS = ["Fibonacci","blockchain"] 
 
 # 关键词匹配模式: 'AND' 表示必须同时包含所有关键词, 'OR' 表示任一关键词即可
 TARGET_KEYWORDS_MODE = 'AND'
